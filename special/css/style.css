@@ -36,12 +36,17 @@ div.item{
 
 div.item1{
   background-color: rgb(231, 250, 215);
-  /* flex-grow: 1; */
+  order: 3;
+  /* flex-basis: 60%;  */
+  /* align-self: center; div.item1 혼자 중앙으로 빠진다. */
   /* flex-grow: 1; 빈 공간을 다 채워버린다. */
+  /* flex-shrink: 3; item2,item3 빼고 3배로 줄어든다 */
 }
 div.item2{
   background-color: rgb(26, 21, 16);
+  order: 1;
 }
 div.item3{
   background-color: rgb(17, 231, 142);
+  order: 2;
 }

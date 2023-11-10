@@ -1,0 +1,63 @@
+/* div{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background: red;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+span{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 30px;
+  background: red;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+} */
+/* 인라인 폭과 높이를 주면 들어간다. */
+/* padding: 20px; 인라인에는 높이가 안들어간다 , display: block; 을 추가해서 넣어주면 들어간다. */
+/* display: block; 을 쓸거면 
+  display: flex;
+  justify-content: end;
+  align-items: end; 지우고 한다.*/
+
+  div.grand-parent{
+    width: 90%;
+    height: 50vh;
+    border: 1px dotted black;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  div.parent{
+    width: 90%;
+    height: 90%;
+    /* 부모꺼 90프로 */
+    border: 5px solid green;
+    position: relative;
+  }
+
+  div.child{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.absolute{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  /* position: relative; 는 자기 기준으로 움직인다. */
+  /* position: relative; 마음대로 배치 변경 */
+  /* flex 로는 마음대로 배치 불가능 */
