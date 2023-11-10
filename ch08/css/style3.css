@@ -1,0 +1,37 @@
+div.box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  /* x축 /
+  align-items: center;
+  / y축 */
+  font-size: 30px;
+  font-weight: 700;
+  float: left;
+}
+/* float 시냇물 디딤돌 기능 */
+
+/* img{
+  float: left;
+  /* 이미지 옆에 글자 옮기기 */
+/* } */ 
+
+div.contain1 {
+  border: 1px solid white;
+  width: 600px;
+  margin: 0 auto;
+}
+
+div.contain2 {
+  border: 1px solid white;
+  width: 600px;
+  margin: 0 auto;
+}
+
+div.contain3 {
+  border: 1px solid white;
+  width: 600px;
+  margin: 0 auto;
+}

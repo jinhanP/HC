@@ -1,0 +1,45 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+div.container{
+  width: 960px;
+  height: 100%;
+  border: 10px dotted red;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+div.header{
+  height: 20%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+div.main{
+  height: 60%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+div.footer{
+  height: 16%;
+  border: 1px solid black;
+}
+
+div[class="text"]{
+  border: 1px solid white;
+}
+/* header 자식,후손 색 같이 바꾸기 */
+div.header h4{
+  color: green;
+}
+/* footer 자식만 색 바꾸기 */
+div.footer > h4{
+  color: green;
+}
+

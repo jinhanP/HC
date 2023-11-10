@@ -1,0 +1,47 @@
+div.container{
+  background: bisque;
+  height: 100vh;
+  /* vh화면의 전체 크기를 잡아준다. */
+  border: 6px dotted gray;
+  display: flex;
+  flex-direction: row;
+  /* float기능이 작동한다. */
+  /* flex-direction:row-reverse 숫자를 반대로 바꿔준다 */
+  /* flex-direction:column 은 세로 주축justify-content: 세로 보조축align-items: 가로*/
+  /* flex-direction:row 은 가로 주축justify-content: 가로 보조축align-items: 세로 */
+  justify-content: left;
+  /* 주측 x */
+  /* justify-content:space-between 사이사이 공간을 똑같이 띄워준다. */
+  /* justify-content:space-around 시작과 끝도 공간을 띄우주고 사이사이 공간을 똑같이 띄워준다. */
+  /* justify-content:space-evenly 시작과 끝도 공간을 똑같이 띄워준다. */
+  align-items: baseline;
+  /* 보조축 y */
+  /* align-items: baseline; 글자를 가운데로 맞춰준다. */
+  flex-wrap: nowrap;
+  /*flex-wrap: wrap; 줄이면 밑으로 빠진다.  */
+  /*flex-wrap: nowrap; 한줄로 고정된다. */
+}
+
+div.item{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: red;
+}
+
+div.item1{
+  background-color: rgb(231, 250, 215);
+  /* flex-grow: 1; */
+  /* flex-grow: 1; 빈 공간을 다 채워버린다. */
+}
+div.item2{
+  background-color: rgb(26, 21, 16);
+}
+div.item3{
+  background-color: rgb(17, 231, 142);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 이미지 삽입</title>
+</head>
+<body>
+  <form action="서버페이지.jsp" method="get">
+    <fieldset>
+      <legend>배송정보</legend>
+      <input type="text" name="admin_id" value="admin1234" readonly /> <br />
+      <table>
+      <label>회원아이디 : <input type="text" placeholder="여기에 아이디입력"
+      /></label>
+      <br />
+      <label
+        >패 스 워 드 :
+        <input type="password" autofocus placeholder="패스워드입력요망" />
+      </label>
+      <br />
+      <label
+        >배 송 주 소 :
+        <input type="text" placeholder="배송주소입력요청함" required />
+      </label>
+      <br />
+      <label for="memo_id">메모장 :
+      <br>
+        <textarea name="memo" id="memo_id" cols="30" rows="10"></textarea>
+      </table>
+      </label>
+      <br />
+      <label for="select_id"
+        >사이트선택 :
+        <select name="site" id="select_id">
+          <option value="http://www.naver.xn--com%22%3E-jf38ah18e8o1a/"></option>
+          <option value="http://www.nate.xn--com%22%3E-jf38ah51m2i2a/"></option>
+          <option value="http://www.daum.xn--com%22%3E-j268a378k/"></option>
+        </select>
+      </label>
+      <br />
+      <label for="list_id"
+        >사이트선택 :
+        <input list="list_id_value" name="list_site" id="list_id" />
+        <datalist id="list_id_value">
+          <option value="http://www.naver.com/" >
+          <option value="http://www.nate.com/" >
+          <option value="http://www.daum.com/" >
+        </datalist>
+      </label>
+      <br />
+
+      <input type="file" />
+      <table>
+        <tr>
+          <td><input type="submit" value="전송" /></td>
+          <td><input type="reset" value="이벤트처리" /></td>
+          <td>
+            <input
+              type="image"
+              src="../image/08.image/05.login.png"
+              alt="이미지버튼"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="이벤트발생"
+              onclick="window.open('./date.html')"
+            />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+  <button type="button">버튼전송</button>
+</body>
+</html>
+<!--헤더(사이트 전체의 헤더or특정 영역의 헤더)내부<nav>(내비게이션 영역,웹 문서 위치에 영향을 받지 않음,문서 안에 여러 개 만들 수 있음(id로 구분)),본문,푸터 로 나눠지고 전체를 -->
