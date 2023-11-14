@@ -1,25 +1,21 @@
 html{
-  height: 100%;
   width: 100%;
 }
 
 body{
-  height: 100%;
   width: 100%;
   margin: 0 auto; 
-
 }
 
 div[class="container"]{
-
   width: 100%;
   /* 부모 크기중에 60% 크기로 줄인다 */
-  height: 100%;
   /* 높이는 hmtl , body까지 줘야지 나온다*/
   margin: 0 auto;
   /* 중앙 정렬 */
   overflow-x: hidden;
 }
+
 /* -------------------------------------------------------------------------------- */
 h1{
   
@@ -50,11 +46,11 @@ div[class="r1"]{
 }
 input[type=button]{
   background-color: white;
-  transform: translate(1700px, -240px);
+  transform: translate(1580px, -240px);
 
 }
 input[class=img2]{ 
-  transform: translate(1700px, -234px);
+  transform: translate(1580px, -234px);
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -75,7 +71,6 @@ button[class="?"]{
 button[class="▼"]{  
   border: 0;
   color: gray;
- 
   font-size: 8px;
   transform: translate(406px, -114px);
 }
@@ -127,24 +122,24 @@ div[class="6"]{
 div [class=g1]{ 
   font-size: 16px;
   font-style: normal;
-  line-height: 200%;
+  line-height: 240%;
   transform: translate(-33px,60px);
 }
 /* ----------------main---------------------------------------------------------------- */
 main{
-  width: 100%;
   transform: translate(330px, -180px);
+  
 }
 /* ----------------main구분선---------------------------------------------------------------- */
 div [class=g2] {
   border: 1px solid black;
-  height: 4400px;
+  height: 3770px;
   width: 770px;
   position: fixed;
-  border-top: none;
   left: 190px;
   margin-right: -6px;
-  top: -477px;
+  top: -509px;
+
 } 
 
 div [class=g3]{ 
@@ -234,7 +229,6 @@ div[class="f8"]{
 }
 
 div[class="class1"]{
-  /* 여기까지 했음 이미지 크기 줄이고 선 맞추기 */
   transform: translate(800px,-1010%);
 }
 div[class="class2"]{
@@ -323,4 +317,11 @@ p[class="h8"]{
   justify-content: center;
   align-items: center;
   transform: translate(300px,-80px); 
+}
+
+div[class="class14"]{
+  display: flex;
+  justify-content: right;
+  transform: translate(-140px,-680px);
+  padding-bottom: 100px;
 }
