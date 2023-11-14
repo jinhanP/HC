@@ -1,0 +1,327 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; 
+
+}
+
+div[class="container"]{
+
+  width: 100%;
+  /* 부모 크기중에 60% 크기로 줄인다 */
+  height: 100%;
+  /* 높이는 hmtl , body까지 줘야지 나온다*/
+  margin: 0 auto;
+  /* 중앙 정렬 */
+  overflow-x: hidden;
+}
+/* -------------------------------------------------------------------------------- */
+h1{
+  
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  transform: translate(310px, 12px);
+  
+}
+h2{
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  transform: translate(377px, -35px);
+}
+
+h3{
+  margin: 90px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+div[class="r1"]{
+  margin: -40px;
+}
+input[type=button]{
+  background-color: white;
+  transform: translate(1700px, -240px);
+
+}
+input[class=img2]{ 
+  transform: translate(1700px, -234px);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+input[class="p"]{
+  height: 35px;
+  border-radius: 20px;
+  transform: translate(500px, -110px);
+  opacity: 0.5;
+}
+button[class="?"]{
+  border: 1px;
+  font-size: 12px;
+  color: gray;
+  border-radius: 20px;
+  transform: translate(410px, -113px);
+}
+button[class="▼"]{  
+  border: 0;
+  color: gray;
+ 
+  font-size: 8px;
+  transform: translate(406px, -114px);
+}
+input[class="img"]{
+  height: 29px;
+  border: 0;
+  color: gray;
+  border-radius: 20px;
+  transform: translate(400px, -100px);
+}
+div[class="7"]{
+  transform: translate(340px, -190px);
+}
+
+
+div[class="1"]{
+  width: 30px;
+  height: 30px; 
+  transform: translate(-40px);
+}
+div[class="2"]{
+  width: 30px;
+  height: 30px; 
+  transform: translate(-46px);
+}
+div[class="3"]{
+  height: 25px; 
+  transform: translate(-41px);
+}
+div[class="4"]{
+  height: 30px; 
+  transform: translate(-45px);
+}
+div[class="5"]{
+  height: 28px; 
+  transform: translate(-54px);
+}
+div[class="6"]{
+  height: 30px; 
+  transform: translate(-48px);
+}
+.vl2{
+  width: 175px;
+  border: 1px solid black;
+  transform: translate(-70px,40px);
+  opacity: 0.2;
+  
+}
+div [class=g1]{ 
+  font-size: 16px;
+  font-style: normal;
+  line-height: 200%;
+  transform: translate(-33px,60px);
+}
+/* ----------------main---------------------------------------------------------------- */
+main{
+  width: 100%;
+  transform: translate(330px, -180px);
+}
+/* ----------------main구분선---------------------------------------------------------------- */
+div [class=g2] {
+  border: 1px solid black;
+  height: 4400px;
+  width: 770px;
+  position: fixed;
+  border-top: none;
+  left: 190px;
+  margin-right: -6px;
+  top: -477px;
+} 
+
+div [class=g3]{ 
+  position: fixed;
+  right: 1150px;
+  margin-right: -6px;
+  top: 50px;
+}
+
+/* --------------main구분선------------------------------------------------------------------ */
+
+div[class="g4"]{
+  font-weight: 600;
+  font-size: 20px;
+  transform: translate(40px,20px);
+}
+
+.cl{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(-50px);
+}
+
+
+.fi{
+  font-size: 20px;
+  transform: translate(210px,-440px);
+}
+.f2{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translate(310px,-490px);
+  opacity: 0.5;
+  /* 투명도 */
+}
+span[class=s1]{
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: first baseline;
+  transform: translate(810px,-510px);
+}
+
+div[class=img]{
+  display: flex;
+  justify-content: first baseline;
+  transform: translate(220px,-490px);
+}
+div[class="f3"]{
+  font-weight: bolder;  
+  font-size: 13px;
+  transform: translate(218px,-485px);
+}
+div[class="f4"]{
+  font-size: 13px;
+  transform: translate(218px,-485px);
+  opacity: 0.5;
+}
+div[class=img2]{
+  display: flex;
+  justify-content: first baseline;
+  transform: translate(440px,-632px);
+}
+div[class="f5"]{
+  font-weight: bolder;
+  font-size: 13px;
+  transform: translate(440px,-629px);
+}
+div[class="f6"]{
+  font-size: 13px;
+  transform: translate(440px,-629px);
+  opacity: 0.5;
+}
+div[class=img3]{
+  display: flex;
+  justify-content: first baseline;
+  transform: translate(660px,-775px);
+}
+div[class="f7"]{
+  font-weight: bolder;
+  font-size: 13px;
+  transform: translate(660px,-772px);
+}
+div[class="f8"]{
+  font-size: 13px;
+  transform: translate(660px,-772px);
+  opacity: 0.5;
+}
+
+div[class="class1"]{
+  /* 여기까지 했음 이미지 크기 줄이고 선 맞추기 */
+  transform: translate(800px,-1010%);
+}
+div[class="class2"]{
+  font-size: 14px;
+  width: 45%;
+  transform: translate(220px,-800px);
+}
+div[class="class3"]{
+  font-size: 14px;
+  width: 45%;
+  transform: translate(220px,-800px); 
+  opacity: 0.5;
+}
+div[class="class4"]{
+  width: 91%;
+  margin: -20px;
+  transform: translate(240px,-670px); 
+}
+
+div[class="class5"]{
+  font-size: 20px;
+  transform: translate(220px,-750px); 
+}
+
+span[class=s2]{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: first baseline;
+  transform: translate(810px,-772px);
+}
+
+div[class="class6"]{
+  font-size: 15px;
+}
+
+div[class="class7"]{
+  opacity: 0.5;
+}
+
+div[class="class8"]{
+  width: 100%;
+  transform: translate(220px,-750px); 
+}
+
+div[class="class9"]{
+  transform: translate(220px,-750px); 
+}
+
+div[class="class10"]{
+  
+  font-size: 20px;
+}
+
+.wrap-vertical{
+  transform: translate(-50px,15px); 
+  zoom: 1.2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  right: -50px;
+  opacity: 0.5;
+}
+button{
+  background-color: white;
+  border: none;
+  box-shadow: color black
+}
+
+p[class="h7"]{
+  display: block;
+  font-size: 14px;
+  transform: translate(120px,-90px); 
+ 
+}
+
+div[class="class12"]{
+  width: 95%;
+  transform: translate(40px,-50px); 
+  margin: -30px;
+}
+
+p[class="h8"]{
+  width: 100px;
+  left: -5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(300px,-80px); 
+}
