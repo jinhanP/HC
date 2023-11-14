@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+
+a{
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px dotted black;
+  border-radius: 20px;
+  width: 80%;
+  background-color: aqua;
+}
+ul > li{
+  display: inline-block;
+}
+
+li#li_login{
+  float: right;
+}
+
+li > a{
+  color: white;
+  display: inline;
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: 900px;
+}
+
+li:hover > a{
+  background-color: black;
+}

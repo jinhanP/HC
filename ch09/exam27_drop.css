@@ -1,0 +1,126 @@
+/* 공통 부분 텍스트 body,a 데코레이션을 없애준다.*/
+body{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* 공통 부분 텍스트 데코레이션을 없애준다.*/
+
+/* 메뉴 부분 */
+ul {
+   /*ul 은 margin 과 padding이 있다. M,P 값을 0 을 줘야된다. */
+  list-style-type: none; 
+  margin: 0; 
+  /* 상.하 중복이 되도 상관이 없다. 중복이 되면 뒤에 쓴게 적용이 된다.*/
+  padding: 0;
+  border: 1px dotted black;
+  /* border-radius: 20px;  */
+  /* 모서리 둥글게 만들기 */
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgb(53,94,169);
+  /* overflow: hidden; 
+  background-color: rgb(53,94,169);  */
+  /* background-color: #999 ; */ 
+ } 
+
+ /* ul 속에 있는 자식 li */
+  ul > li{
+  display: inline-block;
+ }
+
+ /* 로그인만 오른쪽으로 보내기 */
+ li#li_login{
+  float: right;
+ }
+
+/* li 속에 있는 자식 a */
+ li > a{
+  color: white;
+  /* 메뉴 박스 */
+  display: inline-block;
+  padding: 14px 16px;
+  /* 메뉴 안에있는 글자 두껍게 */
+  font-size: 20px;
+  font-weight: 900;
+ }
+
+ /* li:hover 속에 있는 자식 a */
+ /* 메뉴 마우스 올릴 시 색 변화 */
+ li:hover > a {
+  background-color: rgb(120, 155, 219);
+ }
+
+ /* 자식에 있는 dropdown-content가 블록이 보여야 된다. */
+ li.dropdown:hover > .dropdown-content{
+  display: block;
+ }
+
+ /* 하위 메뉴 집어넣기 쇼핑 메뉴 아래로 보이게 하기*/
+ .dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: beige;
+  /* 박스 그림자 주기 */
+  box-shadow: 0px 8px 16px 0px black;
+  opacity: 2px;
+ }
+
+/* dropdown-content 자식 쇼핑 안에 메뉴 글자 크기 */
+ .dropdown-content > a {
+  color: black;
+  display: inline-block;
+  /* block이면 세로 inline-blockd이면 가로  */
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: 900;
+ }
+/* dropdown-content 자식 쇼핑 안에 메뉴 색 넣기 */
+ .dropdown-content > a:hover {
+  background-color: rgb(120, 155, 219);
+  color: white;
+ }
+
+ /* li { 
+  float: left; 
+ } 
+ li a, .dropbtn { 
+  display: inline-block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+ }
+ li a:hover, .dropdown:hover .dropbtn { 
+  /* background-color: red; 
+  background-color: #6799FF; 
+ } 
+ li.dropdown { 
+  display: inline-block; 
+ } 
+ li a.active, a.active:hover{ 
+   background-color: #4CAF50; 
+  background-color: #6799FF; 
+ } 
+ .dropdown-content { 
+  display: none; 
+  position: absolute; 
+  background-color: #f9f9f9; 
+  box-shadow: 0px 8px 16px 0px rgb(0,0,0);  
+ opacity: 0.8; 
+ z-index: 1; 
+} 
+.dropdown-content a { 
+ color: black; 
+ padding: 12px 16px; 
+ text-decoration: none; 
+ display: block; 
+ text-align: left; 
+} 
+.dropdown-content a:hover {background-color: #f1f1f1} 
+.dropdown:hover .dropdown-content { 
+ display: block; 
+}  */
