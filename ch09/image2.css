@@ -1,0 +1,52 @@
+div.contain{
+  border: 1px solid black;
+}
+
+div.gallery { 
+  margin: 5px; 
+  border: 1px solid black; 
+  float: left; display:inline; 
+  width: 180px; 
+ } 
+ div.gallery img { 
+  width: 100%; 
+  height: auto; 
+ } 
+ div.desc { 
+  padding: 15px; 
+  text-align: center; 
+ }
+ div.gallery img:hover { 
+  opacity: 0.3; 
+ } 
+
+ div.gallery2 { 
+  margin: 5px; 
+  border: 1px solid #ccc; 
+  float: left; display:inline; 
+  width: 180px;
+  position: relative;
+  left: -768px;
+  top: 160px;
+} 
+
+ div.gallery2 img { 
+  width: 100%; 
+  height: auto; 
+ } 
+ 
+
+div.gallery3 { 
+ margin: 5px; 
+ border: 1px solid #ccc; 
+ float: left; display:inline; 
+ width: 180px;
+ position: relative;
+ left: 0px;
+ top:155px;
+} 
+
+div.gallery3 img { 
+ width: 100%; 
+ height: auto; 
+} 

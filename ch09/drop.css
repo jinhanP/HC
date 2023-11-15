@@ -1,36 +1,74 @@
-body{
+/* 전체 선택 */
+body,ul{
   margin: 0;
+  padding: 0;
 }
 
 a{
-  padding: 0;
+  text-decoration: none;
+  /* 밑줄 삭제 */
+  color: white;
+  font-weight: 900px;
+  font-size: 20px;
 }
 
 ul{
-  list-style-type: none;
+  list-style: none;
+  /* ul점 지우기 */
+  background-color: rgb(53, 94, 169);
+  width: 1120px;
   margin: 0 auto;
-  padding: 0;
-  border: 1px dotted black;
-  border-radius: 20px;
-  width: 80%;
-  background-color: aqua;
-}
-ul > li{
-  display: inline-block;
+  /* 중간으로 맞추기 */
+  box-shadow: 0px 8px 16px 0px black;
+  opacity: 2px;
 }
 
-li#li_login{
-  float: right;
+/* ul 속에 있는 자식 li */
+ul > li{
+ display: inline-block;
+ /* 한 줄로 만들기 */
+ 
 }
 
 li > a{
-  color: white;
-  display: inline;
+  display: inline-block;
   padding: 14px 16px;
-  font-size: 20px;
-  font-weight: 900px;
 }
 
-li:hover > a{
-  background-color: black;
+li > a:hover {
+  /* 마우가 올라가면 */
+  background-color: red;
+}
+
+li#li_login {
+  float: right;
+}
+
+.dropdown .dropdown-content{
+  /* 후손 선택자 */
+  position: absolute;
+  /* 쇼핑,뉴스 메뉴 안에 메뉴가 들어간다. */
+  display: none;
+  /* display 속성은 요소를 어떻게 보여줄지를 결정 */
+  min-width: 200px;
+  background-color: beige;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 14px 16px;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #6799ff;
+  /* 메뉴 안에 메뉴를 마우스 올리면 색 */
+}
+
+.dropdown:hover .dropdown-content{
+  /* dropdown 속에 마우스 올리면 dropdown-content 가 보인다.  */
+  display: block;
+  box-shadow: 0px 8px 16px 0px black;
+  opacity: 2px;
+  z-index: 1;
 }

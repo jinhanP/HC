@@ -1,0 +1,31 @@
+div.contain{
+  border: 1px solid black;
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* 크기에 맞게 확장,축소 */
+  align-items: center;
+}
+
+div.visible{
+  border: 1px dotted red;
+  width: 400px;
+  height: 150px;
+}
+
+div.visi{
+  overflow: visible;
+}
+div.invisi{
+  overflow: hidden;
+}
+div.scroll{
+  overflow: scroll;
+}
+div.auto{
+  overflow: auto;
+}

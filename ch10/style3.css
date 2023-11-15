@@ -1,0 +1,49 @@
+/* position:relative 자기가 원래 있는 위치가 기준점으로 가능.*/
+/* position:absolute 자기 부모의 원점으로 다 가버린다. */
+div.contain{
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  border: 1px solid black;
+  position: absolute;
+  /* position: absolute; 부모의 원점에서 자유 배치 가능. */
+  top: 600px;
+  right: 200px;
+}
+
+div.box{
+  display: block;
+  width: 100px;
+  font-weight: 900;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  /* position: relative; : box안의 기준점에서 자유 배치 가능. */
+}
+
+div.box:nth-child(1){
+  background-color: red;
+  top: 200px;
+  left: 200px;
+  z-index: 2;
+}
+div.box:nth-child(2){
+  background-color: yellow;
+  top: 100px;
+  left: 200px;
+  z-index: 1;
+}
+div.box:nth-child(3){
+  background-color: blue;
+  top: 100px;
+  left: 100px;
+}
+
+div.box:nth-child(4){
+  background-color: green;
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+}

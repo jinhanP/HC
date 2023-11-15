@@ -31,60 +31,61 @@ ul {
   display: inline-block;
  }
 
- /* 로그인만 오른쪽으로 보내기 */
- li#li_login{
-  float: right;
- }
-
-/* li 속에 있는 자식 a */
+ 
+ /* li 속에 있는 자식 a */
  li > a{
-  color: white;
-  /* 메뉴 박스 */
-  display: inline-block;
-  padding: 14px 16px;
-  /* 메뉴 안에있는 글자 두껍게 */
-  font-size: 20px;
-  font-weight: 900;
- }
-
- /* li:hover 속에 있는 자식 a */
- /* 메뉴 마우스 올릴 시 색 변화 */
- li:hover > a {
-  background-color: rgb(120, 155, 219);
- }
-
- /* 자식에 있는 dropdown-content가 블록이 보여야 된다. */
- li.dropdown:hover > .dropdown-content{
-  display: block;
- }
-
- /* 하위 메뉴 집어넣기 쇼핑 메뉴 아래로 보이게 하기*/
- .dropdown-content{
-  display: none;
-  position: absolute;
-  min-width: 200px;
-  background-color: beige;
-  /* 박스 그림자 주기 */
-  box-shadow: 0px 8px 16px 0px black;
-  opacity: 2px;
- }
-
-/* dropdown-content 자식 쇼핑 안에 메뉴 글자 크기 */
- .dropdown-content > a {
-  color: black;
-  display: inline-block;
-  /* block이면 세로 inline-blockd이면 가로  */
-  padding: 14px 16px;
-  font-size: 20px;
-  font-weight: 900;
- }
-/* dropdown-content 자식 쇼핑 안에 메뉴 색 넣기 */
- .dropdown-content > a:hover {
-  background-color: rgb(120, 155, 219);
-  color: white;
- }
-
- /* li { 
+   color: white;
+   /* 메뉴 박스 */
+   display: inline-block;
+   padding: 14px 16px;
+   /* 메뉴 안에있는 글자 두껍게 */
+   font-size: 20px;
+   font-weight: 900;
+  }
+  
+  /* li:hover 속에 있는 자식 a */
+  /* 메뉴 마우스 올릴 시 색 변화 */
+  li:hover > a {
+    background-color: rgb(120, 155, 219);
+  }
+  
+  /* 자식에 있는 dropdown-content가 블록이 보여야 된다. */
+  li.dropdown:hover > .dropdown-content{
+    display: block;
+  }
+  
+  /* 하위 메뉴 집어넣기 쇼핑 메뉴 아래로 보이게 하기*/
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: beige;
+    /* 박스 그림자 주기 */
+    box-shadow: 0px 8px 16px 0px black;
+    opacity: 2px;
+  }
+  
+  /* dropdown-content 자식 쇼핑 안에 메뉴 글자 크기 */
+  .dropdown-content > a {
+    color: black;
+    display: inline-block;
+    /* block이면 세로 inline-blockd이면 가로  */
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  /* 로그인만 오른쪽으로 보내기 */
+  li#li_login{
+   float: right;
+  }
+  
+  /* dropdown-content 자식 쇼핑 안에 메뉴 색 넣기 */
+  .dropdown-content > a:hover {
+    background-color: rgb(120, 155, 219);
+    color: white;
+  }
+  
+  /* li { 
   float: left; 
  } 
  li a, .dropbtn { 

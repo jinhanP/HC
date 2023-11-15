@@ -1,0 +1,23 @@
+body{
+  padding-top: 0px;
+}
+
+span{
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  margin: 20px;
+  /* 좌,우만 작동한다. */
+  padding: 20px;
+  /* 전체가 작동한다. */
+  color: red;
+  font-size: 20px;
+  font-weight: 900px;
+  display: inline-block;
+  /* inline-block 한줄로 오기는 하는데 기능은 블럭 
+  성질을 처리한다.margin,padding 이 가능해진다.*/
+  /* block 절대 옆에 다른게 못온다 */
+  /* inline 한줄로 */
+  /* 블럭, 인라인, 인라인 블럭, 플렉스 */
+}
+

@@ -1,0 +1,47 @@
+div.contain{
+  border: 1px solid black;
+  width: 1200px;
+  /* vh 전체 */
+  margin: 0 auto;
+  padding: 10px;
+  /* 전체 공간 */
+}
+
+header, nav, footer{
+  width: 1100px;
+  height: 150px;
+  border: 1px dotted red;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* 공간 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  width: 1100px;
+  border: 1px dotted red;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+section > article{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article:nth-child(1){
+  width: 300px;
+  height: 500px;
+}
+article:nth-child(2){
+  width: 460px;
+  height: 400px;
+}
+article:nth-child(3){
+  width: 300px;
+  height: 300px;
+}
