@@ -1,0 +1,23 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+h1{
+  background-color: gray;
+}
+
+img{
+ width: 200px;
+}
+
+p{
+  height: 100px;
+  background-color: gray;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}

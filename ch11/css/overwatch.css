@@ -1,0 +1,148 @@
+body{
+  width: 1200px;
+  height: 98vh;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  /* padding: 10px; */
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+header, nav, section, footer{
+  /* border: 1px dotted red; */
+  /* padding: 5px; */
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+}
+
+header{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: gray;
+}
+
+header>img{
+  height: 80px;
+  position: relative;
+  left: 45%;
+}
+header>ul{
+  display: flex;
+  position: relative;
+}
+header>ul>li{
+}
+
+header>ul>li>a{
+  color: green;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  height: auto;
+}
+nav>ul{
+  height: 100px;
+  height: auto;
+}
+
+nav>ul>li{
+  border-bottom: 2px solid white;
+  display: inline-block;
+  z-index: 1;
+}
+
+.content{
+  background-color: white;
+  position: absolute;
+  display: none;
+  margin-top: 2px;
+}
+li>a{
+  display: block;
+  padding: 10px 15px;
+  z-index: 1;
+}
+
+.content>a{
+
+  display: block;
+  padding: 15px;
+}
+
+li.member{
+  float: right;
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+li.member>a{
+  border: 2px solid white;
+  border-radius: 50px;
+  color: black;
+}
+li.member>a:hover{
+  color: gray;
+  border: 2px solid black;
+}
+header>ul>li>a:hover{
+  color: black;
+}
+
+nav>ul>li.menu:hover {
+  border-bottom: 2px solid gray;
+}
+li:hover >a{
+  color: gray;
+}
+li:hover .content{
+  display: block;
+}
+.content>a:hover{
+  color: gray;
+}
+
+section{
+  background-color: beige;
+  height: 65%;
+  border-bottom: 2px solid rgb(194, 194, 194);
+  border-top: 2px solid rgb(194, 194, 194);
+  
+}
+
+iframe:nth-child(2){
+  position: relative;
+ 
+}
+
+footer{
+  font-size: 14px;
+}
+.footer:nth-child(1){
+  padding: 10px 100px 10px 100px;
+  border-bottom: 2px solid rgb(194, 194, 194);
+}
+.footer.content1>a{
+  padding: 10px;
+}
+
+.footer.content1>a:hover{
+  color: gray;
+}
+
+.footer:nth-child(2){
+  padding: 10px 100px 10px 100px;
+  background-color: gray;
+}

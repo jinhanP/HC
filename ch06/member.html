@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
+  <link rel="stylesheet" href="./member.css">
 </head>
 <body>
   <form>
+    <div><h1><center>계정 생성</center></h1></div>
     <fieldset>
       <legend>회원가입</legend>
       <table>
@@ -32,8 +34,8 @@
       <tr>
         <td><label>성별</label></td>
         <td>
-        <input type="radio" name="gender" value="man"><label>남자</label>
-        <input type="radio" name="gender" value="woman"><label>여자</label>
+          <input type="radio" name="gender" value="man"><label>남자</label>
+          <input type="radio" name="gender" value="woman"><label>여자</label>
         </td>
       </tr>
       <tr>
@@ -71,10 +73,12 @@
         <td colspan="2" align="center"> <!--align정렬,center중심-->
           <input type="submit" value="전송">
           <input type="reset" value="취소">
+          <div class="1">로봇이 아닌지 확인해주세요<img src="../image/image/로봇.jpg" alt=""></div>
         </td>
       </tr>
-      </table>
-    </fieldset>
+    </table>
+  </fieldset>
+  <div><p>다른 사람에게 알려주지 마세요.</p></div>
   </form>
 </body>
 </html>

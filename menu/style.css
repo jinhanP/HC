@@ -1,0 +1,38 @@
+/* 모든 태그 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  /* li 점 없애기 */
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  /* 밑 줄 없애기 */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 900;
+  border: 1px solid black;
+}
+
+a.first{
+  border-radius: 15px 0 0 15px;
+}
+
+a.last{
+  border-radius: 0 15px 15px 0;
+}
+
+ul{
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 1320px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
