@@ -1,66 +1,308 @@
-.contain{
-  border: 1px solid black;
-  width: 1850px;
-  padding: 10px;
-  margin: 0 auto;
+body{
+width:100%;
+overflow-x:hidden;
 }
-
-header,nav,footer{
-  margin-bottom: 10px;
+.contain{
   
+  padding: 10px;
 }
 
 header{
-  border: 1px solid black;
-  height: 200px;
-  display: flex;
+  height: 250px;
   display: flex;
   justify-content: center;
   background-color: rgb(64,77,85);
-  
 }
-
 
 nav{
-  display: flex;
-  justify-content: space-around;
+  height: 15000px;
+  background-color:  #FEFEFE;
 }
-nav > article{
-  border: 1px solid black;
-  height: 700px;
-  margin: 1px;
+
+header>a>input{
+  width: 650px;
+  height: 250px;
 }
+/* 1 클랜소개 */
+
 article >div> p>font{
   font-size: 200px;
   font-weight: 900;
   color: rgb(64,77,85);
+  display: flex;
+  justify-content: center;
 }
-p:nth-child(1){
-  font-size: 30px;
+.ebl3{
+  font-size: 80px;
   font-weight: 900;
   color: rgb(64,77,85);
+  text-align: center;
 }
 
 h1{
-  font-size: 30px;
+  font-size: 50px;  
+  text-align: center;
+}
+
+
+/* ------------------------------ */
+/* 02 이비로 클랜 장점 */
+
+.ebl4{
+  font-size: 80px;
+  font-weight: 900;
+  color: rgb(64,77,85);
+  text-align: center;
+ 
+}
+aside >div> p>font{
+  font-size: 200px;
+  font-weight: 900;
+  color: rgb(64,77,85);
+  display: flex;
+  justify-content: center;
+}
+
+.circle1{
+  border: 6px solid #fff;
+  width: 940px;
+  height: 940px;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(350px,0px);
+  text-align: center;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(./myimg/e94a7671d038b5a80ea0edf05875098e.gif) 85% ;
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(221, 221,221);
 }
 
-article:nth-child(1){
-  width: 920px;
-  height: 700px;
+.circle2{
+  border: 6px solid #fff;
+  width: 940px;
+  height: 940px;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(920px,-400px);
+  text-align: center;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./myimg/5c3cc284531615a866df98a73dc432f9.gif트레이서.gif) center 100%;
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(221, 221,221);
 }
-article:nth-child(2){
-  width: 920px;
+.circle3{
+  border: 6px solid #fff;
+  width: 940px;
+  height: 940px;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(350px,-700px);
+  text-align: center;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./myimg/15367.gif\ 루시우.gif) center 100%;
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(221, 221,221);
+}
+.circle4{
+  border: 6px solid #fff;
+  width: 940px;
+  height: 940px;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(920px,-1000px);
+  text-align: center;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./myimg/아나.gif) center 5%;
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(221, 221,221);
+}
+.circle5{
+  border: 6px solid #fff;
+  width: 940px;
+  height: 940px;
+  border-radius: 50%;
+  font-size: 60px;
+  font-weight: 900;
+  transform: translate(350px,-1300px);
+  text-align: center;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./myimg/정커퀸.gif);
+  background-size: cover;
+  box-shadow: 0 0 16px rgb(221, 221,221);
+}
+main{
+  transform: translate(0px,-800px);
+}
+main >h1{
+  font-size: 50px;
+  color: rgb(64,77,85);
 }
 
-footer{
-  border: 1px solid red;
+.civil > img{
+  width: 1000px;
+  height: 2000px;
+  color: white;
+}
+.circle6{
+  border: 6px solid #fff;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  transform: translate(850px,0px);
+  background: url(./myimg/원\ ebl.png) center;
+  background-size: 700px;
+  box-shadow: 0 0 16px rgb(221, 221,221);
+}
+main >div> p>font{
+  font-size: 200px;
+  font-weight: 900;
+  color: rgb(64,77,85);
+  display: flex;
+  justify-content: center;
+}
+
+
+.ebl5{
+  font-size: 80px;
+  font-weight: 900;
+  color: rgb(64,77,85);
+  text-align: center;
+}
+
+.circle7{
+ border: 1px solid black;
+ width: 1700px;
+ border-radius: 10%;
+ margin: 0 auto;
+ text-align: center;
+ font-size: 30px;
+ font-weight: 900;
+ background: url(./myimg/하나무라.jpg) center;
+ background-size: cover;
+ box-shadow: 0 0 16px rgb(221, 221,221);
+}
+.ebl6{
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+.ebl6>li>font{
+  color: red;
+}
+.ebl7{
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(64,77,85);
+  text-align: center;
+}
+.circle8{
+  border: 6px solid black;
+  width: 300px;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 50%;
+  transform: translate(150%,0px);
+  background-color: #d7dbdc;
+}
+.circle9{
+  border: 6px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 50%;
+  transform: translate(150%,0px);
+  background-color: #b2b6b7;
+}
+.circle10{
+  border: 6px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 50%;
+  transform: translate(150%,0px);
+  background-color:  #8c9497;
+}
+.circle11{
+  border: 6px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 50%;
+  transform: translate(150%,0px);
+  background-color: #676e76;
+}
+.circle12{
+  border: 6px solid black;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 50%;
+  transform: translate(150%,0px);
+  background-color:  #404d55;
+}
+ul{
+  font-size: 40px;
+  transform: translate(800px,-220px);
+  color: rgb(64,77,85);
 }
 
+main>input{
+  width: 2350px;
+  height: 500px;
+}
+footer{
+  height: 700px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+ 
+}
+footer > p{
+  
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  background: url(./myimg/카카오톡.png) center;
+ 
+}
