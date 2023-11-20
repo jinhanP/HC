@@ -6,22 +6,29 @@ header,nav,section,footer{
 
 header{
   border: 1px solid black;
-  height: 100px;
+  height: auto;
 }
 
 article{
-  border: 1px solid black;
-  display: flex;
-  justify-content: right;
+  border: 1px solid red;
   background-color: gray;
+  text-decoration: none;
+ 
 }
 
-article > a{
- text-decoration: none;
- text-indent: 15px;
- color: gainsboro;
- font-size: 12px;
+
+article >a{
+  width:auto;
+  border: 1px solid ;
+  height: auto;
+  color: gainsboro;
+  font-size: 14px;
+  font-weight: 900;
+  display: inline-block;
+  justify-content: space-between;
 }
+
+
 
 nav{
   margin: 2px auto;
