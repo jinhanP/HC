@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let url = "http://www.naver.com/";
+    // 글자출력
+    document.write("<p>문자열 :"+url +"</p>");
+    // 글자 수 리턴
+    document.write("<p>문자열길이 :"+url.length +"</p>");
+    // 글자 위치
+    document.write("<p>문자열 세번째위치 :"+url.charAt(3) +"</p>");
+    // 글자 위치찾기
+    let position = url.indexOf('a');
+    document.write("<p>문자열 a위치 :"+url.indexOf('a') +"</p>");
+    // 글자 위치찾기 (두번째 부터)
+    document.write("<p>문자열 a위치 :"+url.indexOf('a',position + 1) +"</p>");
+     // 글자 마지막 위치찾기 
+     document.write("<p>문자열 a위치 :"+url.lastIndexOf('a') +"</p>");
+    //  글자 부분자르기
+    document.write("<p>문자열 a위치 :"+url.substring(0 , 5) +"</p>");
+  //  글자 부분에서 마지막 까지 자르기
+  document.write("<p>문자열 a위치 :"+url.substring(5) +"</p>");
+  //  글자 대문자 출력
+  document.write("<p>문자열 대문자출력 :"+url.toUpperCase(url) +"</p>");
+    //  글자 소문자 출력
+    document.write("<p>문자열 대문자출력 :"+url.toLowerCase(url) +"</p>");
+    
+  </script>
+</head>
+<body>
+  <p>문자열</p>
+  
+</body>
+</html>

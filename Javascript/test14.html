@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    div#box{
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+    function fontColor(_color){
+      let divBox = document.getElementById("box");
+      divBox.style.color = _color;
+    }
+    function backgroundColor(_color){
+      let divBox = document.getElementById("box");
+      divBox.style.backgroundColor = _color;
+    }
+  </script>
+</head>
+<body>
+    <div class="container mt-5">
+      <div id="box" ><h1>텍스트영역입니다.</h1>
+      <div class="row">
+        <div class="col d-flex justify-content-start mt-5">
+          <button type="button" class="btn btn-primary" onclick="fontColor('#f00')">폰트빨강</button>
+          <button type="button" class="btn btn-secondary" onclick="fontColor('#0f0')">폰트초록</button>
+          <button type="button" class="btn btn-success" onclick="fontColor('#00f')">폰트파랑</button>
+
+          <button type="button" class="btn btn-danger" onclick="backgroundColor('#00f')">배경파랑</button>
+          <button type="button" class="btn btn-warning" onclick="backgroundColor('#0f0')">배경연두</button>
+          <button type="button" class="btn btn-info" onclick="backgroundColor('#f00')">배경빨강</button>
+          <button type="button" class="btn btn-light" onclick="backgroundColor('#f0f')">배경핑크</button>
+          <button type="button" class="btn btn-dark" onclick="backgroundColor('#0000')">배경흰색</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

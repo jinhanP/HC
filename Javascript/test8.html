@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function openWindow(){
+      window.open("http://www.naver.com","naverWindow", "width=300, height=500, scrollbars=no, toolvar=no, menubar=no, status=no, location=no");
+      // 사이트 변경 가능
+      // "naverWindow" 현재 창 새로고침
+      // width=300, height=500 ... 팝업 창 설정
+    }
+    function closeWindow(){
+      window.close("http://www.naver.com" );
+    }
+  </script>
+</head>
+<body>
+  <button onclick="openWindow()">네이버창열기</button>
+  <button onclick="closeWindow()">현재창닫기</button>
+
+  <a href="http://www.naver.com" target="_blank">네이버창열기</a>
+  <!-- a 는 사이트 변경 불가 -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function goNaver(){
+      if(confirm("정말 네이버로 이동하시겠습니까?")){
+          location.href= "http://www.naver.com";
+      }
+    }
+    function reload(){
+      window.location.reload();
+    }
+  </script>
+</head>
+<body>
+    <input type="button" value="네이버로 이동하기" onclick="goNaver()">
+    <a href="#" onclick="reload()">현재페이지 F5</a>
+</body>
+</html>

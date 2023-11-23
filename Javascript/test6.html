@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>displayTime</title>
+  <script>
+    let intervalIndex = 0;
+    function displayTime(){
+      // 현재 시간
+      let date = new Date();
+      let year = date.getFullYear();
+      let month = date.getMonth() + 1;
+      let _date = date.getDate();
+      let hour = date.getHours();
+      let minute = date.getMinutes();
+      let second = date.getSeconds();
+      let day = date.getDay();
+      let datArray = new Array("일","월","화","수","목","금","토",);
+      let dateValue = year + "-" + month +"-"+_date+" "+datArray[day]+"요일"+" "+hour+":"+minute+":"+second;
+      
+      document.getElementById("timer").innerHTML = dateValue;
+    }
+    function startTimar(){
+      // 1초에 한번씩 반복해서 자동으로 1000번 호출
+      intervalIndex = setInterval(displayTime, 1000);
+      // console.log("intervalIndex =" + intervalIndex);
+      // console.log('typeof intervalIndex' +typeof  intervalIndex);
+      // intervalIndex 어디서 오는지
+    }
+    function stopTimar(){
+      clearInterval(intervalIndex);
+    }
+    function stopTimar(){
+      document.getElementById("timer").innerHTML = "타이머 시작";
+    }
+  </script>
+</head>
+<body>
+  <h1 id="timer">시간이 보여짐</h1>
+  <button onclick="startTimar()">시작</button>
+  <button onclick="stopTimar()">종료</button>
+  <button onclick="stopTimar()">재시작</button>
+
+
+</body>
+</html>
+
+<style>
+  h1{
+    border: 1px solid black;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+</style>

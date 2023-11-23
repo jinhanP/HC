@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .thumbnail{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 120px;
+      float: left;
+    }
+
+    .thumbnail li{
+      width: 100px;
+      height: 100px;
+      padding: 5px 10px;
+    }
+
+    .thumbnail img{
+      width: 100px;
+      height: 100px;
+    }
+
+    .view{
+      float: left;
+      width: 500px;
+      height: 320px;
+      padding: 5px 0;
+    }
+
+    .view img{
+      width: 500px;
+      height: 430px;
+    }
+  </style>
+  <script>
+    function setImage(index){
+      var image_list =[ 
+        './17_2img/1.jpg',
+        './17_2img/2.jpg',
+        './17_2img/3.jpg',
+        './17_2img/startup.jpg'
+      ];
+      var image = document.getElementById("target");
+        image.src = image_list[index];
+    }
+    
+  </script>
+</head>
+<body>
+  <ul class="thumbnail">
+    <li><a href="#" onmouseover="setImage(0); "><img src="./17_2img/1.jpg"></a></li>
+    <li><a href="#" onmouseover="setImage(1); "><img src="./17_2img/2.jpg"></a></li>
+    <li><a href="#" onmouseover="setImage(2); "><img src="./17_2img/3.jpg"></a></li>
+    <li><a href="#" onmouseover="setImage(3); "><img src="./17_2img/startup.jpg"></a></li>
+  </ul>
+  <div class="view">
+    <img src="./17_2img/startup.jpg" id="target">
+  </div>
+</body>
+</html>
