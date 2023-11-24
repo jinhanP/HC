@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>문자열을 이용한 search() 메소드</title> 
+<script type="text/javascript"> 
+var reg = /\W/; // \W는 영문자와 숫자가 아닌 경우를 나타내는 정규식 
+var str = prompt("ID를 입력 하세요", "language"); // 사용자가 입력한 ID 
+if (str.search(reg) >= 0) { 
+alert("ID는 영문자와 숫자만 사용할 수 있습니다."); 
+} else { 
+alert(str + "은(는) 사용할 수 있는 ID입니다"); 
+} 
+</script> 
+</head> 
+<body> 
+</body> 
+</html>
