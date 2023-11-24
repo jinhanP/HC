@@ -31,8 +31,14 @@
                 frm.user_name.focus();
                 return false;
             }
-
-            // 라디오 버튼의 입력여부 검사.
+            // 아이디 검색
+            var regID = /^ [a-zA-Z][0-9a-zA-Z]{4,7}$/;
+             if (!reg.test(frm.user_name)) {
+                alert("이름을 입력해 주세요.");
+                frm.user_name.value = "";
+                frm.user_name.focus();
+                return false;
+            }
             // 항목이 두 개 밖에 없으므로, 굳이 반복문을 처리하지는 않았다.
             if (!frm.gender[0].checked && !frm.gender[1].checked) {
                 alert("성별을 선택해 주세요.");
@@ -75,8 +81,12 @@
                 <label>name / 이름</label>
                 <input type="text" name="user_name" />
             </div>
+            <div class="input_group ">
+                <label for="user_id">아이디</label>
+                <input type="text" name="user_id" id="user_id"/>
+            </div>
             <div class="input_group">
-                <label>gender / 성별</label>
+                <label>gender /성별</label>
                 <label><input type="radio" name="gender" value="M"> man</label>
                 <label><input type="radio" name="gender" value="F"> woman</label>
             </div>
