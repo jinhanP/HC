@@ -201,7 +201,8 @@ button:focus {
   width: 33%;
   text-align: center;
   margin: 10px 0;
- }
+ 
+} 
  #links ul li a span {
   display: block;
   margin: 0 auto;

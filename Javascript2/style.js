@@ -7,6 +7,12 @@ showSlides(current);
 prev.onclick = prevSlide; 
 next.onclick = nextSlide; 
 
+sliderBtnNext.addEventListener ("click", () => {
+  let nextIndex = (currentIndex +1) % sliderCount
+  gotoSlider(nextIndex);
+  // 01234...8 01234...8
+});
+
 function showSlides(n) { 
  for (let i = 0; i < slides.length; i++) { 
  slides[i].style.display = "none"; 
