@@ -81,8 +81,8 @@ function pwCheck() {
 	pw.style.borderWidth = '1px';
 }
 function patternPwCheck() {
-	let id = document.getElementById("password");
-	let idCheck = document.getElementById("pwCheck");
+	let pw = document.getElementById("password");
+	let pwCheck = document.getElementById("pwCheck");
 	pwCheck.style.display = 'block';
 	// 비밀번호 정규식
 	var regID = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,16}$/;
