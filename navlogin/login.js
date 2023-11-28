@@ -64,7 +64,7 @@ function patternIdCheck() {
 	// 아이디 정규식
 	var regID = /^[a-z][a-z0-9]{4,7}$/g;
 	if (!regID.test(id.value)) {
-		idCheck.innerHTML = "*미입력";
+		idCheck.innerHTML = "*영문자 또는 숫자 4~7자";
 		idCheck.style.color = "red";
 	}
 	else {
@@ -90,7 +90,7 @@ function patternPwCheck() {
 	// 비밀번호 정규식
 	var regID = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,16}$/;
 	if (!regID.test(pw.value)) {
-		pwCheck.innerHTML = "*미입력";
+		pwCheck.innerHTML = "*8 ~ 16자 영문, 숫자";
 		pwCheck.style.color = "red";
 	}
 	else {
@@ -142,7 +142,7 @@ function patternEmailCheck() {
 	let email = document.getElementById("email");
 	let emailCheck = document.getElementById("emailCheck");
 	emailCheck.style.display = 'block';
-	// 주소 정규식
+	// email 정규식
 	var regID = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,30}$/i;
 	if (!regID.test(email.value)) {
 		emailCheck.innerHTML = "*미입력";
@@ -232,5 +232,5 @@ function check() {
 		return false;
 	}
 
-	
+
 }
