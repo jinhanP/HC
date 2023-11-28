@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dream Jeju</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./style.js"></script>
+
 </head>
 <body>
   <div id="container">  
@@ -38,10 +38,10 @@
     <div id="slideShow"> 
       <div id="slides"> 
         <img src="../09.image/image/01.jpg" alt=""> 
-          <img src="../09.image/image/03.jpg" alt=""> 
-          <img src="../09.image/image/04.jpg" alt=""> 
-        <button id="prev">&lang;</button> 
-        <button id="next">&rang;</button> 
+        <img src="../09.image/image/03.jpg" alt=""> 
+        <img src="../09.image/image/04.jpg" alt=""> 
+        <button id="prev" onclick="prevSlide()">&lang;</button> 
+        <button id="next" onclick="nextSlide()">&rang;</button> 
       </div> 
     </div> 
     <div id="contents"> 
@@ -113,7 +113,9 @@
         <p>제주특별자치도 ***동 ***로 *** (대표전화) 123-456-7890</p> 
   </div>  
   </footer>  
-  </div> 
+  </div>
+  <script src="./style.js?ver=20231128"></script>
+  <!-- ?ver=20231128 값만 바뀌면 됨-->
  </body> 
  </html>
  

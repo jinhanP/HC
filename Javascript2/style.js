@@ -1,16 +1,12 @@
+// 객체가 없어서 null 이기떄문에 자바스크립트를 아래쪽 바디에 
 var slides = document.querySelectorAll("#slides > img"); 
+// querySelectorAll 자식 이미지를 배열로 가져온다.
 var prev = document.getElementById("prev"); 
 var next = document.getElementById("next"); 
 var current = 0; 
 
 showSlides(current); 
-prev.onclick = prevSlide; 
-next.onclick = nextSlide; 
 
-sliderBtnNext.addEventListener ("click", () => {
-  let nextIndex = (currentIndex +1) % sliderCount
-  gotoSlider(nextIndex);
-});
 
 function showSlides(n) { 
  for (let i = 0; i < slides.length; i++) { 
@@ -18,15 +14,21 @@ function showSlides(n) {
  } 
  slides[n].style.display = "block"; 
 } 
+
 function prevSlide() { 
- if (current > 0) current -= 1; 
- else 
- current = slides.length - 1; 
- showSlides(current); 
+ if (current > 0) {
+   current -= 1;
+  }else{
+    current = slides.length - 1; 
+  }
+  showSlides(current); 
 } 
+
 function nextSlide() { 
- if (current < slides.length - 1) current += 1; 
- else 
- current = 0; 
+ if (current < slides.length - 1){
+   current += 1; 
+ } else{
+   current = 0; 
+ } 
  showSlides(current);  
 }
