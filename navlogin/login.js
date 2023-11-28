@@ -53,8 +53,9 @@ function idCheck() {
 	let idCheck = document.getElementById("idCheck");
 	idCheck.style.display = 'none';
 	id.style.outline = 'none';
-	id.style.borderColor = 'red';
 	id.style.borderWidth = '1px';
+	idCheck.style.fontSize = "10px";
+
 }
 function patternIdCheck() {
 	let id = document.getElementById("id");
@@ -63,10 +64,12 @@ function patternIdCheck() {
 	// 아이디 정규식
 	var regID = /^[a-z][a-z0-9]{4,7}$/g;
 	if (!regID.test(id.value)) {
-		idCheck.innerHTML = "다시 입력";
+		idCheck.innerHTML = "*미입력";
+		idCheck.style.color = "red";
 	}
 	else {
-		idCheck.innerHTML = "통과";
+		idCheck.innerHTML = "입력 완료";
+		idCheck.style.color = "green";
 	}
 
 }
@@ -77,8 +80,8 @@ function pwCheck() {
 	let pwCheck = document.getElementById("pwCheck");
 	pwCheck.style.display = 'none';
 	pw.style.outline = 'none';
-	pw.style.borderColor = 'red';
 	pw.style.borderWidth = '1px';
+	pwCheck.style.fontSize = "10px";
 }
 function patternPwCheck() {
 	let pw = document.getElementById("password");
@@ -87,10 +90,12 @@ function patternPwCheck() {
 	// 비밀번호 정규식
 	var regID = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,16}$/;
 	if (!regID.test(pw.value)) {
-		pwCheck.innerHTML = "다시 입력";
+		pwCheck.innerHTML = "*미입력";
+		pwCheck.style.color = "red";
 	}
 	else {
-		pwCheck.innerHTML = "통과";
+		pwCheck.innerHTML = "입력 완료";
+		pwCheck.style.color = "green";
 	}
 
 }
@@ -102,8 +107,8 @@ function nameCheck() {
 	let nameCheck = document.getElementById("nameCheck");
 	nameCheck.style.display = 'none';
 	name.style.outline = 'none';
-	name.style.borderColor = 'red';
 	name.style.borderWidth = '1px';
+	nameCheck.style.fontSize = "10px";
 }
 function patternNameCheck() {
 	let name = document.getElementById("name");
@@ -112,13 +117,15 @@ function patternNameCheck() {
 	// 이름 정규식
 	var regID = /[ㄱ-힣]/;
 	if (!regID.test(name.value)) {
-		nameCheck.innerHTML = "다시 입력";
+		nameCheck.innerHTML = "*미입력";
+		nameCheck.style.color = "red";
 	}
 	else {
-		nameCheck.innerHTML = "통과";
+		nameCheck.innerHTML = "입력 완료";
+		nameCheck.style.color = "green";
+		}
 	}
 
-}
 
 
 //email
@@ -127,20 +134,23 @@ function emailCheck() {
 	let emailCheck = document.getElementById("emailCheck");
 	emailCheck.style.display = 'none';
 	email.style.outline = 'none';
-	email.style.borderColor = 'red';
 	email.style.borderWidth = '1px';
+	emailCheck.style.fontSize = "10px";
 }
+
 function patternEmailCheck() {
 	let email = document.getElementById("email");
 	let emailCheck = document.getElementById("emailCheck");
 	emailCheck.style.display = 'block';
 	// 주소 정규식
-	var regID = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+	var regID = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,30}$/i;
 	if (!regID.test(email.value)) {
-		emailCheck.innerHTML = "다시 입력";
+		emailCheck.innerHTML = "*미입력";
+		emailCheck.style.color = "red";
 	}
 	else {
-		emailCheck.innerHTML = "통과";
+		emailCheck.innerHTML = "입력 완료";
+		emailCheck.style.color = "green";
 	}
 
 }
@@ -148,7 +158,7 @@ function patternEmailCheck() {
 
 
 function check() {
-	/* 아이디 유효성 검사 */
+	/* 아이디 유효성 */
 	if (myform.id.value.length == 0) {
 		alert("아이디가 누락됐습니다.");
 		myform.id.focus(); // 포커스를 이동시켜 바로 아이디를 입력할 수 있게
@@ -158,7 +168,7 @@ function check() {
 
 
 
-	/* 비밀번호유효성 검사 */
+	/* 비밀번호 유효성  */
 	if (myform.password.value.length == 0) {
 		alert("비밀번호가 누락됐습니다.");
 		myform.password.focus();
@@ -193,7 +203,7 @@ function check() {
 	}
 
 
-	/* 이메일 유효성 검사 */
+	/* 이메일 유효성  */
 	if (myform.email.value.length == 0) {
 		alert("이메일이 누락됐습니다.");
 		myform.email.focus();
@@ -214,7 +224,7 @@ function check() {
 		if (myform.gender[i].checked) {
 			str += myform.gender[i].value + "\n";
 			flag = true;
-			break; // 라디오박스에서는 1개만 선택될 수 있으므로 사용가능
+			break; 
 		}
 	}
 
