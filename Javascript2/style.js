@@ -10,7 +10,6 @@ next.onclick = nextSlide;
 sliderBtnNext.addEventListener ("click", () => {
   let nextIndex = (currentIndex +1) % sliderCount
   gotoSlider(nextIndex);
-  // 01234...8 01234...8
 });
 
 function showSlides(n) { 
