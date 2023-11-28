@@ -156,7 +156,6 @@ function patternEmailCheck() {
 }
 
 
-
 function check() {
 	/* 아이디 유효성 */
 	if (myform.id.value.length == 0) {
@@ -233,4 +232,5 @@ function check() {
 		return false;
 	}
 
+	
 }
